@@ -37,11 +37,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-6"
           >
-            <img 
-              src="/swet_logo.jpg" 
-              alt="SWET Logo" 
-              className="w-24 h-24 rounded-full object-cover mx-auto mb-6 shadow-lg"
-            />
+            {/* Removed the logo as requested */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Shwetansh Welfare and <br />Education Trust
             </h1>

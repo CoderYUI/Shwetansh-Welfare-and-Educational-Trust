@@ -129,11 +129,9 @@ const Benefits = () => {
           >
             <div className="py-6 px-8 bg-gradient-to-r from-brand-500 to-brand-600 rounded-xl text-white inline-block">
               <p className="text-lg font-semibold mb-2">
-                Plus: Stipend up to ₹70,000 (T&C Apply)
+                Plus: Stipend up to ₹70,000<sup>*</sup>
               </p>
-              <button className="bg-white text-brand-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-medium">
-                Learn More
-              </button>
+              <p className="text-xs text-white/70">*Terms and conditions apply</p>
             </div>
           </motion.div>
         </div>

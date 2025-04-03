@@ -6,10 +6,12 @@ import Departments from './components/Departments'
 import Process from './components/Process'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import SEOHead from './components/SEOHead'
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead />
       <Navbar />
       <main className="overflow-hidden">
         <Hero />
