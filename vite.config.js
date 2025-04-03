@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     allowedHosts: [
-      'fort-librarian-column-educators.trycloudflare.com'
+      '' // for the local developement testing using cloudflared tunnels
     ]
   }
 })
