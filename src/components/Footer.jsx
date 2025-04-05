@@ -14,7 +14,7 @@ const Footer = () => {
                 className="h-12 w-12 rounded-full object-cover"
               />
               <div className="font-bold text-xl">
-                <span className="text-brand-400">Shwetansh</span> Welfare
+                <span className="text-brand-400">Shwetansh</span> Welfare and Educational Trust
               </div>
             </div>
             <p className="text-gray-400 mb-2">
