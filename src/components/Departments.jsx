@@ -32,6 +32,16 @@ const departments = [
     description: "Develop engaging content for all platforms and publications" 
   },
   { 
+    icon: "📊", 
+    name: "Management", 
+    description: "Coordinate projects, lead teams, and ensure efficient operations" 
+  },
+  { 
+    icon: "📈", 
+    name: "Marketing", 
+    description: "Develop strategies to promote our initiatives and broaden our reach" 
+  },
+  { 
     icon: "🎓", 
     name: "Volunteering", 
     description: "Coordinate and participate in on-ground volunteer activities" 
