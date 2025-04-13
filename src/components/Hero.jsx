@@ -62,7 +62,7 @@ const Hero = () => {
               href="#departments"
               className="bg-white text-brand-600 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all"
             >
-              Join as Volunteer
+              Join Us
             </motion.a>
             
             <motion.a
