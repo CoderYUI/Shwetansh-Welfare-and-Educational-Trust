@@ -39,7 +39,7 @@ const Hero = () => {
           >
             {/* Removed the logo as requested */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Shwetansh Welfare and <br />Education Trust
+              Shwetansh Welfare and <br />Educational Trust
             </h1>
             <p className="text-xl md:text-2xl text-white opacity-90 italic mb-10">
               "Empowering Youth, Transforming Futures"

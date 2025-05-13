@@ -33,7 +33,7 @@ const Navbar = () => {
               className="h-12 w-auto rounded-full object-cover"
             />
             <div className={`font-semibold text-sm md:text-base lg:text-lg ${scrolled ? 'text-gray-800' : 'text-white'}`}>
-              <span className={scrolled ? "text-brand-600" : "text-white"}>Shwetansh</span> Welfare and Education Trust
+              <span className={scrolled ? "text-brand-600" : "text-white"}>Shwetansh</span> Welfare and Educational Trust
             </div>
           </div>
           
