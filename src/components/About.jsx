@@ -14,7 +14,7 @@ const About = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Who We Are</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We are a government-registered organization committed to driving positive change
-            insociety through education, welfare, and social initiatives.
+            in society through education, welfare, and social initiatives.
           </p>
         </motion.div>
         
