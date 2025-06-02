@@ -59,7 +59,7 @@ const Hero = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#departments"
+              href="https://forms.gle/TqivSGspxzNXbMDXA"
               className="bg-white text-brand-600 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all"
             >
               Join Us

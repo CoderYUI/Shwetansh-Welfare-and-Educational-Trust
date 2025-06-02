@@ -45,7 +45,22 @@ const departments = [
     icon: "🎓", 
     name: "Volunteering", 
     description: "Coordinate and participate in on-ground volunteer activities" 
-  }
+  },
+   {
+    icon: "🎥",
+    name: "Video Editing",
+    description: "Craft compelling video content and bring ideas to life through post-production"
+  },
+  {
+    icon: "✒️",
+    name: "Graphic Design",
+    description: "Design eye-catching visuals, layouts, and brand assets for digital and print"
+  },
+  {
+    icon: "🛎",
+    name: "Front Office",
+    description: "Ensure smooth daily operations and be the first point of contact for visitors"
+  }
 ];
 
 const Departments = () => {
