@@ -66,12 +66,12 @@ const Navbar = () => {
               About
             </a>
             <a 
-              href="#benefits" 
+              href="#ourservices" 
               className={`font-medium hover:text-brand-500 transition-colors ${
                 scrolled ? 'text-gray-700' : 'text-white hover:text-white/80'
               }`}
             >
-              Benefits
+              Our Services
             </a>
             <a 
               href="#departments" 
