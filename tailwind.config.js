@@ -10,18 +10,18 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
-        // Warm orange/red color scheme instead of blue
+        // Changed to blue color scheme
         brand: {
-          50: '#fff7ed',
-          100: '#ffedd5',
-          200: '#fed7aa',
-          300: '#fdba74',
-          400: '#fb923c',
-          500: '#f97316',
-          600: '#ea580c',
-          700: '#c2410c',
-          800: '#9a3412',
-          900: '#7c2d12',
+          50: '#e3f2fd',
+          100: '#bbdefb',
+          200: '#90caf9',
+          300: '#64b5f6',
+          400: '#42a5f5',
+          500: '#2196f3',
+          600: '#1e88e5',
+          700: '#1976d2',
+          800: '#1565c0',
+          900: '#0d47a1',
         },
         accent: {
           50: '#f9fafb',
