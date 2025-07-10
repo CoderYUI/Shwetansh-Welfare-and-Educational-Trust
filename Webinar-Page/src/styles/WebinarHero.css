@@ -1,0 +1,84 @@
+/* src/components/WebinarHero.css */
+
+.webinar-hero {
+    background: linear-gradient(to right, var(--primary-blue), var(--dark-blue)); /* Blue gradient background */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 100px 20px; /* More padding for a grander feel */
+    position: relative; /* For any potential absolute positioning elements */
+    overflow: hidden; /* Hide overflow from potential decorative elements */
+    min-height: 450px; /* Ensure a minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.webinar-hero h1 {
+    font-size: 3.5em; /* Larger heading */
+    color: #fff; /* White color for the main title */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+}
+
+.webinar-hero p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* Center text and add space below */
+    color: rgba(255, 255, 255, 0.9); /* Slightly subdued white */
+}
+
+/* Hero Button Styling */
+.hero-button {
+    display: inline-block;
+    background-color: #ffc107; /* A contrasting yellow/amber for the button */
+    color: var(--heading-color); /* Dark text on button */
+    padding: 15px 35px;
+    border-radius: 50px; /* Very rounded button */
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Button shadow */
+    border: none;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #ffb300; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Subtle decorative element for the hero, similar to the seminar header */
+.webinar-hero::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05); /* Very light, transparent white circle */
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.webinar-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+}
+
+.webinar-hero h1, .webinar-hero p, .hero-button {
+    position: relative; /* Ensure text and button are above decorative elements */
+    z-index: 1;
+}
