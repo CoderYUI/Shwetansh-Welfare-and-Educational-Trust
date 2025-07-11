@@ -66,12 +66,12 @@ const Navbar = () => {
               About
             </a>
             <a 
-              href="#benefits" 
+              href="#services" 
               className={`font-medium hover:text-brand-500 transition-colors ${
                 scrolled ? 'text-gray-700' : 'text-white hover:text-white/80'
               }`}
             >
-              Benefits
+              Our Services
             </a>
             <a 
               href="#departments" 
@@ -102,8 +102,8 @@ const Navbar = () => {
               <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 text-gray-700">
                 About
               </a>
-              <a href="#benefits" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 text-gray-700">
-                Benefits
+              <a href="#ourservices" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 text-gray-700">
+                 Our Services
               </a>
               <a href="#departments" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 text-gray-700">
                 Join Us
