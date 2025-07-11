@@ -1,0 +1,53 @@
+/* src/components/WebinarUniqueFeatures.css */
+
+.webinar-unique-features {
+    background-color: var(--card-background); /* Use white for this section's background */
+    padding: 80px 20px; /* Adjust padding */
+    text-align: center; /* Center the main heading */
+    border-radius: 12px; /* Slight rounding for the whole section if desired */
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px var(--shadow-light); /* Subtle shadow for the section block */
+}
+
+.webinar-unique-features h2 {
+    margin-bottom: 60px; /* More space below the heading before features */
+    font-size: 2.5em;
+    color: var(--heading-color);
+}
+
+/* Grid for the list of unique features */
+.unique-features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between grid items */
+    margin-top: 40px;
+    justify-content: center;
+}
+
+/* Styling for each individual feature item */
+.unique-features-list li {
+    background-color: var(--light-blue); /* Light blue background for each feature card */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners for the cards */
+    box-shadow: 0 4px 10px var(--shadow-light); /* Subtle shadow for each card */
+    text-align: left; /* Align text within cards to left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid var(--primary-blue); /* A prominent blue left border */
+}
+
+.unique-features-list li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.unique-features-list li h3 {
+    font-size: 1.4em;
+    color: var(--dark-blue); /* Darker blue for feature titles */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.unique-features-list li p {
+    font-size: 1em;
+    color: var(--text-color);
+}

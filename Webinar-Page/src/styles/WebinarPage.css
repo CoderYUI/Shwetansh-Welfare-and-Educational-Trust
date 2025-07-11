@@ -1,0 +1,107 @@
+/* src/styles/WebinarPage.css */
+
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-blue: #2196f3; /* A vibrant blue */
+    --dark-blue: #1976d2;    /* Darker blue for accents/hover */
+    --light-blue: #e3f2fd;   /* Very light blue for backgrounds */
+    --text-color: #333;
+    --heading-color: #1a237e; /* Darker, deep blue for headings */
+    --background-light: #f8fbff; /* Off-white / very light blue background */
+    --card-background: #ffffff;
+    --border-light: #bbdefb; /* Light blue border */
+    --shadow-light: rgba(0, 0, 0, 0.08); /* Subtle shadow */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light); /* Overall page background */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Utility Container for Centering Content --- */
+.container {
+    max-width: 1200px; /* Max width similar to the inspiration */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Basic padding */
+    text-align: left;
+}
+
+/* --- Basic Typography --- */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Bold headings */
+    color: var(--heading-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+h1 {
+    font-size: 2.8em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.8em;
+    line-height: 1.4;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+/* --- General Section Padding --- */
+section {
+    padding: 60px 20px; /* Top/bottom padding for sections */
+    margin-bottom: 30px; /* Space between sections */
+}
+
+/* --- Footer Styling (from WebinarPage.jsx) --- */
+.webinar-footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--light-blue); /* Using a variable for consistency */
+    color: var(--heading-color);   /* Using a variable for consistency */
+    margin-top: 40px;
+    border-top: 1px solid var(--border-light); /* Subtle border for separation */
+    font-size: 0.9em;
+}
+
+.webinar-footer p {
+    margin: 0; /* Remove default paragraph margin */
+}
