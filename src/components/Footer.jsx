@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               {/* Use actual logo */}
               <img 
-                src="/swet_logo.jpg" 
+                src="/swet.png" 
                 alt="SWET Logo" 
                 className="h-12 w-12 rounded-full object-cover"
               />
@@ -30,12 +30,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li><a href="#about" className="text-gray-400 hover:text-brand-400 transition-colors">About Us</a></li>
-              <li><a href="#benefits" className="text-gray-400 hover:text-brand-400 transition-colors">Benefits</a></li>
-              <li><a href="#departments" className="text-gray-400 hover:text-brand-400 transition-colors">Departments</a></li>
-              <li><a href="#process" className="text-gray-400 hover:text-brand-400 transition-colors">Work Process</a></li>
               <li><a href="/privacy_policy" className="text-gray-400 hover:text-brand-400 transition-colors">Privacy Policy</a></li>
               <li><a href="/refund_policy" className="text-gray-400 hover:text-brand-400 transition-colors">Refund Policy</a></li>
               <li><a href="/terms" className="text-gray-400 hover:text-brand-400 transition-colors">Terms & Conditions</a></li>
+              <li><a href="/join-us" className="text-gray-400 hover:text-brand-400 transition-colors">Join Us</a></li>
             </ul>
           </div>
           

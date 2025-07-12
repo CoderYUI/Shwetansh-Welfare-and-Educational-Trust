@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -37,7 +38,6 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-6"
           >
-            {/* Removed the logo as requested */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Shwetansh Welfare and <br />Educational Trust
             </h1>
@@ -56,14 +56,15 @@ const Hero = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="https://forms.gle/TqivSGspxzNXbMDXA"
-              className="bg-white text-brand-600 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all"
-            >
-              Join Us
-            </motion.a>
+            <Link to="/join-us">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-white text-brand-600 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all"
+              >
+                Join Us
+              </motion.button>
+            </Link>
             
             <motion.a
               whileHover={{ scale: 1.05 }}

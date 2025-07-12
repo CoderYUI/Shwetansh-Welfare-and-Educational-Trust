@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import ScrollToTop from './ScrollToTop'; // ✅ Import ScrollToTop
 
 const TermsConditions = () => {
   return (
@@ -148,6 +149,7 @@ const TermsConditions = () => {
         </div>
       </div>
       <Footer />
+      <ScrollToTop /> {/* ✅ Add ScrollToTop component */}
     </div>
   );
 };
