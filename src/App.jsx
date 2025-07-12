@@ -4,14 +4,17 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Benefits from './components/Benefits';
 import OurServices from './components/ourservices';
-import Departments from './components/Departments';
-import Process from './components/Process';
-import Contact from './components/Contact';
+import PreviousWork from './components/PreviousWork'; // ✅ Import PreviousWork
+import Testimonials from './components/Testimonials'; // ✅ Import Testimonials
+import JoinUsCTA from './components/JoinUsCTA'; // ✅ Import JoinUsCTA
 import Footer from './components/Footer';
 import SEOHead from './components/SEOHead';
-import Seminars from './components/Seminars'; // ✅ Import Seminars
+import Seminars from './components/Seminars';
+import Olympiads from './components/Olympiads';
+import Webinars from './components/Webinars';
+import JoinUs from './components/JoinUs'; // ✅ Import JoinUs
+import ScrollToTop from './components/ScrollToTop'; // ✅ Import ScrollToTop
 
 // Homepage layout
 function Home() {
@@ -22,16 +25,16 @@ function Home() {
       <main className="overflow-hidden">
         <Hero />
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50 pointer-events-none h-32" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white-50 pointer-events-none h-32" />
           <About />
-          <Benefits />
           <OurServices />
-          <Departments />
-          <Process />
-          <Contact />
+          <PreviousWork /> {/* ✅ Add PreviousWork component */}
+          <Testimonials /> {/* ✅ Add Testimonials component */}
+          <JoinUsCTA /> {/* ✅ Add JoinUsCTA component */}
         </div>
       </main>
       <Footer />
+      <ScrollToTop /> {/* ✅ Add ScrollToTop component */}
     </>
   );
 }
@@ -41,6 +44,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/seminars" element={<Seminars />} />
+      <Route path="/olympiads" element={<Olympiads />} />
+      <Route path="/webinars" element={<Webinars />} />
+      <Route path="/join-us" element={<JoinUs />} /> {/* ✅ Added JoinUs route */}
     </Routes>
   );
 }

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import ScrollToTop from './ScrollToTop'; // ✅ Import ScrollToTop
 
 const RefundPolicy = () => {
   return (
@@ -81,6 +82,7 @@ const RefundPolicy = () => {
         </div>
       </div>
       <Footer />
+      <ScrollToTop /> {/* ✅ Add ScrollToTop component */}
     </div>
   );
 };

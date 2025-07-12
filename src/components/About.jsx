@@ -1,9 +1,84 @@
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const About = () => {
+  // Create container and item variants like in OurServices component
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
+  // Image carousel functionality
+  const images = [
+    "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "https://images.unsplash.com/photo-1526976668912-1a811878dd37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "https://images.unsplash.com/photo-1540479859555-17af45c78602?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "https://images.unsplash.com/photo-1560252829-804f1aedf1be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+  ];
+  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const controls = useAnimation();
+
+  // Auto scroll through images
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Prepare the next image transition
+      controls.start({
+        opacity: 0,
+        transition: { duration: 0.5 }
+      }).then(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        controls.start({
+          opacity: 1,
+          transition: { duration: 0.5 }
+        });
+      });
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [controls, images.length]);
+
   return (
-    <section className="py-20 bg-white" id="about">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-white relative overflow-hidden" id="about">
+      {/* Animated background bubbles similar to hero section */}
+      <motion.div 
+        animate={{ 
+          scale: [1, 1.2, 1],
+          opacity: [0.05, 0.1, 0.05],
+        }}
+        transition={{ duration: 8, repeat: Infinity }}
+        className="absolute right-[10%] top-[15%] w-72 h-72 rounded-full bg-brand-200 opacity-10"
+      />
+      
+      <motion.div 
+        animate={{ 
+          scale: [1, 1.3, 1],
+          opacity: [0.03, 0.08, 0.03],
+        }}
+        transition={{ duration: 10, repeat: Infinity }}
+        className="absolute left-[5%] bottom-[20%] w-80 h-80 rounded-full bg-brand-300 opacity-10"
+      />
+      
+      <motion.div 
+        animate={{ 
+          scale: [1, 1.1, 1],
+          opacity: [0.04, 0.09, 0.04],
+        }}
+        transition={{ duration: 7, repeat: Infinity }}
+        className="absolute left-[30%] top-[10%] w-40 h-40 rounded-full bg-brand-100 opacity-10"
+      />
+
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -75,15 +150,14 @@ const About = () => {
               <div className="relative z-10 rounded-lg shadow-lg w-full h-full overflow-hidden">
                 <div className="relative w-full h-full">
                   <motion.div
-                    initial={{ scale: 1.05 }}
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.8 }}
+                    animate={controls}
+                    initial={{ opacity: 1 }}
                     className="w-full h-full"
                   >
                     <img 
-                      src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" 
-                      alt="Youth Empowerment" 
-                      className="w-full h-full object-cover"
+                      src={images[currentImageIndex]} 
+                      alt={`Youth Empowerment ${currentImageIndex + 1}`} 
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     />
                   </motion.div>
                   
@@ -137,6 +211,31 @@ const About = () => {
             >
               <span className="transform -rotate-12">🌱</span>
             </motion.div>
+            
+            {/* Image indicators */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    controls.start({
+                      opacity: 0,
+                      transition: { duration: 0.3 }
+                    }).then(() => {
+                      setCurrentImageIndex(index);
+                      controls.start({
+                        opacity: 1,
+                        transition: { duration: 0.3 }
+                      });
+                    });
+                  }}
+                  className={`w-2.5 h-2.5 rounded-full ${
+                    currentImageIndex === index ? 'bg-brand-600' : 'bg-gray-300'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
           </motion.div>
         </div>
 
@@ -152,7 +251,14 @@ const About = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Field Of Work</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Updated mission boxes to match service boxes style */}
+          <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             {[
               {
                 icon: "🎓",
@@ -187,18 +293,15 @@ const About = () => {
             ].map((field, index) => (
               <motion.div 
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg border-b-2 border-brand-300"
+                variants={itemVariants}
+                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl border-t-4 border-brand-500 transition-all"
               >
-                <div className="text-4xl mb-4">{field.icon}</div>
+                <div className="text-4xl mb-4 bg-brand-50 w-16 h-16 rounded-full flex items-center justify-center">{field.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{field.title}</h3>
                 <p className="text-gray-600">{field.description}</p>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import ScrollToTop from './ScrollToTop'; // ✅ Import ScrollToTop
 
 const PrivacyPolicy = () => {
   return (
@@ -160,6 +161,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
       <Footer />
+      <ScrollToTop /> {/* ✅ Add ScrollToTop component */}
     </div>
   );
 };

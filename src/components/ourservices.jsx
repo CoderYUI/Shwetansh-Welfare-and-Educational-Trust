@@ -22,21 +22,21 @@ const services = [
     description:
       'National-level competitions designed to challenge and inspire young minds in various subjects.',
     icon: '📘',
-    link: '', // No redirect
+    link: '/olympiads',
   },
   {
     title: 'Webinars',
     description:
       'Live expert-led sessions to educate, upskill, and empower students and professionals.',
     icon: '💻',
-    link: '', // No redirect
+    link: '/webinars',
   },
   {
     title: 'Seminars',
     description:
       'Interactive seminars held online and offline to encourage learning and discussion.',
     icon: '🎤',
-    link: '/seminars', // ✅ Route to Seminar page
+    link: '/seminars',
   },
 ];
 
@@ -63,27 +63,38 @@ const OurServices = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {services.map((service, index) => {
-            const CardContent = (
+          {services.map((service, index) => (
+            <Link to={service.link} key={index} className="block group">
               <motion.div
-                key={index}
                 variants={itemVariants}
-                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl border-t-4 border-brand-500 transition-all"
+                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl border-t-4 border-brand-500 transition-all relative"
               >
+                {/* Mobile visual indicator that this is clickable */}
+                <div className="absolute top-4 right-4 md:hidden flex items-center text-brand-500 font-medium text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <p className="text-gray-600 mb-6">{service.description}</p>
+                
+                {/* Learn More button/link for better affordance */}
+                <div className="flex items-center text-brand-600 font-medium group-hover:text-brand-700 transition-colors">
+                  <span>Learn More</span>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" 
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </div>
               </motion.div>
-            );
-
-            return service.link ? (
-              <Link to={service.link} key={index}>
-                {CardContent}
-              </Link>
-            ) : (
-              CardContent
-            );
-          })}
+            </Link>
+          ))}
         </motion.div>
       </div>
     </div>
