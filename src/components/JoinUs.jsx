@@ -198,7 +198,7 @@ const JoinUs = () => {
       <Navbar />
       <div className="overflow-x-hidden">
         {/* Hero Section */}
-        <section className="bg-brand-600 text-white pt-20 pb-16 relative">
+        <section className="bg-brand-600 text-white pt-32 md:pt-30 pb-16 relative">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-500 via-brand-600 to-brand-700"></div>
           <div className="container mx-auto px-4 relative">
             <div className="text-center">
