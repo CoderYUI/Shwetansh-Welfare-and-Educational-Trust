@@ -30,7 +30,6 @@ const JoinUsCTA = () => {
             
             <div className="mt-10 bg-white/10 rounded-lg p-6 inline-block">
               <p className="font-medium">Registration Fee: ₹210 only</p>
-              <p className="text-sm text-white/80 mt-1">For 20 days Probation with Certificate</p>
             </div>
           </motion.div>
         </div>
