@@ -287,7 +287,7 @@ const About = () => {
               },
               {
                 icon: "👨‍💼",
-                title: "Unemployment",
+                title: "Tackling Unemployment",
                 description: "Creating opportunities through education and training."
               }
             ].map((field, index) => (
