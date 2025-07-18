@@ -23,33 +23,7 @@ const PreviousWork = () => {
     }
   ];
   
-  // Upcoming projects display in grid format - focused on educational initiatives
-  const upcomingProjects = [
-    {
-      title: "National Science Olympiad",
-      description: "An upcoming competition to discover and nurture scientific talent among students from grades 6-12 across India.",
-      image: "https://images.unsplash.com/photo-1628595351029-c2bf17511435?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
-      category: "Olympiad"
-    },
-    {
-      title: "Career Development Webinar Series",
-      description: "A 6-part webinar series featuring industry experts discussing emerging career paths in technology and digital media.",
-      image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      category: "Webinar"
-    },
-    {
-      title: "Leadership Skills Seminar",
-      description: "On-campus seminars at 10 colleges focusing on developing leadership and entrepreneurial mindset among young adults.",
-      image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      category: "Seminar"
-    },
-    {
-      title: "Mathematics Challenge Olympiad",
-      description: "A nationwide mathematics competition designed to promote analytical thinking and problem-solving skills.",
-      image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      category: "Olympiad"
-    }
-  ];
+  
   
   return (
     <section className="py-16 bg-gray-50 relative overflow-hidden" id="previous-work">
@@ -105,42 +79,6 @@ const PreviousWork = () => {
                 </span>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                 <p className="text-gray-600">{project.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        
-        {/* Section Divider */}
-        <div className="flex items-center justify-center my-12">
-          <div className="h-px bg-gray-200 w-full max-w-sm"></div>
-          <div className="px-4 text-gray-500 font-medium">Upcoming Projects</div>
-          <div className="h-px bg-gray-200 w-full max-w-sm"></div>
-        </div>
-        
-        {/* Upcoming Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {upcomingProjects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-xl shadow-md overflow-hidden group"
-            >
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <span className="inline-block px-3 py-1 bg-brand-50 text-brand-600 rounded-full text-xs font-medium mb-3">
-                  {project.category}
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600 text-sm">{project.description}</p>
               </div>
             </motion.div>
           ))}

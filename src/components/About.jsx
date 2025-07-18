@@ -49,7 +49,14 @@ const About = () => {
   }, [controls, images.length]);
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden" id="about">
+    <motion.section
+      className="py-20 bg-white relative overflow-hidden"
+      id="about"
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+    >
       {/* Animated background bubbles similar to hero section */}
       <motion.div 
         animate={{ 
@@ -162,8 +169,8 @@ const About = () => {
                   </motion.div>
                   
                   <motion.div 
-                    initial={{ opacity: 0.4 }}
-                    whileInView={{ opacity: 0.7 }}
+                    initial={{ opacity: 0.15 }}
+                    whileInView={{ opacity: 0.25 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.5 }}
                     className="absolute inset-0 bg-gradient-to-t from-brand-700 via-brand-700/50 to-transparent"
@@ -287,7 +294,7 @@ const About = () => {
               },
               {
                 icon: "👨‍💼",
-                title: "Unemployment",
+                title: "Tackling Unemployment",
                 description: "Creating opportunities through education and training."
               }
             ].map((field, index) => (
@@ -304,7 +311,7 @@ const About = () => {
           </motion.div>
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
