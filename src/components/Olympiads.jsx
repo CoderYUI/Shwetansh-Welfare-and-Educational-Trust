@@ -14,11 +14,11 @@ const Olympiads = () => {
       <Navbar />
       <div>
         {/* Hero Section with background that allows navbar to be transparent initially */}
-        <section className="bg-brand-600 text-white pt-20 pb-16">
+        <section className="bg-brand-600 text-white pt-32 pb-16">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-500 via-brand-600 to-brand-700 h-[400px]"></div>
           <div className="container mx-auto px-4 relative">
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">National Olympiads</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4"> Shwetansh National Olympiads</h1>
               <p className="text-xl opacity-90 italic mb-6">
                 "Challenging Minds, Inspiring Excellence"
               </p>
@@ -75,11 +75,12 @@ const Olympiads = () => {
                 
                 <div>
                   <div className="rounded-lg overflow-hidden shadow-md">
-                    <img 
-                      src="https://images.unsplash.com/photo-1564894809611-1742fc40ed80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                      alt="Students participating in Olympiad" 
+                    <img
+                      src="https://images.unsplash.com/photo-1655337690727-5224680c8c07?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                      alt="Students participating in olympiad"
                       className="w-full h-full object-cover"
                     />
+
                   </div>
                 </div>
               </div>
@@ -117,27 +118,30 @@ const Olympiads = () => {
                     </li>
                   </ul>
                 </div>
-
-                {/* Mathematics Olympiad */}
+                
+                {/* Workshops */}
                 <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-brand-500">
-                  <div className="text-4xl mb-4">🧮</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Mathematics Olympiad</h3>
-                  <p className="text-gray-600 mb-4">Strengthen problem-solving skills through challenging mathematical problems.</p>
+                  <div className="text-xl mb-4">🛠</div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Workshops</h3>
+                  <p className="text-gray-600 mb-4">
+                    Empower students through interactive and practical learning experiences.
+                  </p>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start">
                       <span className="text-brand-500 mr-2">•</span>
-                      <span>Arithmetic, Algebra, and Geometry</span>
+                      <span>Hands-on sessions in coding, AI, and robotics</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-brand-500 mr-2">•</span>
-                      <span>Logical reasoning and pattern recognition</span>
+                      <span>Soft skills and personality development workshops</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-brand-500 mr-2">•</span>
-                      <span>Advanced mathematical concepts</span>
+                      <span>Career guidance and entrepreneurship training</span>
                     </li>
                   </ul>
                 </div>
+                
 
                 {/* English Olympiad */}
                 <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-brand-500">
@@ -323,3 +327,6 @@ const Olympiads = () => {
 };
 
 export default Olympiads;
+
+
+

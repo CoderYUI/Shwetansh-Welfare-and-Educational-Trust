@@ -14,7 +14,7 @@ const Seminars = () => {
       <Navbar />
       <div>
         {/* Hero Section with background that allows navbar to be transparent initially */}
-        <section className="bg-brand-600 text-white pt-20 pb-16">
+        <section className="bg-brand-600 text-white pt-32 pb-16">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-500 via-brand-600 to-brand-700 h-[400px]"></div>
           <div className="container mx-auto px-4 relative">
             <div className="text-center">
@@ -87,76 +87,40 @@ const Seminars = () => {
           </section>
 
           {/* Seminar Modes */}
-          <section className="py-12 bg-gray-50">
-            <div className="container mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Seminar Modes</h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  Choose the mode that works best for you
-                </p>
-              </div>
-
-              <div className="grid lg:grid-cols-2 gap-8">
-                {/* Online Seminars */}
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-brand-500 p-2 rounded-full text-white text-xl mr-3">
-                      🧑‍💻
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Online Seminars</h3>
-                  </div>
-                  
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Seamless participation from anywhere in India</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Interactive Q&A and live discussions</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Participation certificates for attendees</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Hosted by experienced SWET academic team</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Offline Seminars */}
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-brand-500 p-2 rounded-full text-white text-xl mr-3">
-                      🧑‍🏫
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Offline Seminars</h3>
-                  </div>
-                  
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Face-to-face engagement with professionals</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Practical insights, case studies, and demos</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Networking opportunities</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Physical certificates and materials</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
+         <section className="py-12 bg-gray-50">
+           <div className="container mx-auto px-4 text-center">
+             <h2 className="text-4xl font-bold text-gray-900 mb-4">Seminar Modes</h2>
+             <p className="text-gray-700 mb-10">
+               Our seminars are conducted offline, offering two enriching formats led by experienced professionals.
+             </p>
+         
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+               
+               {/* Industry Expert Seminar */}
+               <div className="bg-white p-6 rounded-lg shadow-md">
+                 <h3 className="text-2xl font-semibold mb-4 text-brand-600">Taken by Industry Experts</h3>
+                 <ul className="text-left list-disc pl-6 space-y-2 text-gray-700">
+                   <li>Live sessions with real-world insights</li>
+                   <li>Case studies from working professionals</li>
+                   <li>Career-oriented discussions and tips</li>
+                   <li>Hands-on practical exposure</li>
+                 </ul>
+               </div>
+         
+               {/* SWET Team Seminar */}
+               <div className="bg-white p-6 rounded-lg shadow-md">
+                 <h3 className="text-2xl font-semibold mb-4 text-brand-600">Taken by SWET Team Experts</h3>
+                 <ul className="text-left list-disc pl-6 space-y-2 text-gray-700">
+                   <li>Concept-oriented academic sessions</li>
+                   <li>Skill-based topic deep dives</li>
+                   <li>Preparation for future opportunities</li>
+                   <li>Offline participation with certification</li>
+                 </ul>
+               </div>
+         
+             </div>
+           </div>
+         </section>
 
           {/* Why Attend */}
           <section className="py-12 bg-white">
