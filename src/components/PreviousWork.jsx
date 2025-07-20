@@ -6,14 +6,14 @@ const PreviousWork = () => {
     {
       title: "Education and Learning Events",
       description: "Organized interactive educational workshops for underprivileged children in Bhopal, featuring group reading sessions and distribution of notebooks, storybooks, and educational materials.",
-      image: "/swet_work_1.jpg",
+      image: "/swet_work_4.jpg",
       category: "Education"
     },
     {
-      title: "Welfare Distribution Drives",
-      description: "Distributed essential items—winter clothing (sweaters, socks, caps) and footwear—to toddlers and older children from marginalized communities.",
-      image: "/swet_work_2.jpg",
-      category: "Welfare"
+      title: "COVID-19 Food Relief Efforts",
+      description: "During the COVID-19 pandemic, the SWET Team provided food to people in hospitals who faced food shortages. For 2-3 years, when most services were closed, our volunteers ensured meals reached those in need.",
+      image: "/swet_work_5.jpg",
+      category: "Relief"
     },
     {
       title: "Community Outreach & Engagement",
