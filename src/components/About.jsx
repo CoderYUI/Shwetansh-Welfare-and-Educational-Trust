@@ -1,5 +1,12 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import img1 from '../assets/swet_work_1.jpg';
+import img2 from '../assets/swet_work_2.jpg';
+import img3 from '../assets/swet_work_3.jpg';
+import img4 from '../assets/swet_work_6.jpg';
+import img6 from '../assets/swet_work_8.jpg';
+
+
 
 const About = () => {
   // Create container and item variants like in OurServices component
@@ -20,10 +27,11 @@ const About = () => {
 
   // Image carousel functionality
   const images = [
-    "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    "https://images.unsplash.com/photo-1526976668912-1a811878dd37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    "https://images.unsplash.com/photo-1540479859555-17af45c78602?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    "https://images.unsplash.com/photo-1560252829-804f1aedf1be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    img1,
+    img2,
+    img3,
+    img4,
+    img6
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -164,7 +172,11 @@ const About = () => {
                     <img 
                       src={images[currentImageIndex]} 
                       alt={`Youth Empowerment ${currentImageIndex + 1}`} 
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                      className={`w-full h-full transition-transform duration-700 hover:scale-105 ${
+                        (images[currentImageIndex] === img4 || images[currentImageIndex] === img6)
+                          ? 'object-contain bg-white'
+                          : 'object-cover'
+                      }`}
                     />
                   </motion.div>
                   
