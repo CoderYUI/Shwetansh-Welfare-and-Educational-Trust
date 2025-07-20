@@ -14,7 +14,7 @@ const Webinars = () => {
       <Navbar />
       <div>
         {/* Hero Section with background that allows navbar to be transparent initially */}
-        <section className="bg-brand-600 text-white pt-20 pb-16">
+        <section className="bg-brand-600 text-white pt-32 pb-16">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-500 via-brand-600 to-brand-700 h-[400px]"></div>
           <div className="container mx-auto px-4 relative">
             <div className="text-center">
@@ -94,97 +94,48 @@ const Webinars = () => {
 
           {/* Modes of Delivery */}
           <section className="py-12 bg-gray-50">
-            <div className="container mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Modes of Delivery</h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  Our webinars are delivered in two flexible formats, catering to the convenience and needs of different participants
-                </p>
-              </div>
-
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Webinar Types</h2>
+              <p className="text-gray-700 mb-10">
+                All webinars are conducted online and categorized by the type of expert delivering them.
+              </p>
+          
               <div className="grid lg:grid-cols-2 gap-8">
-                {/* Online Webinars */}
+          
+                {/* Taken by Industry Experts */}
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-brand-500 p-2 rounded-full text-white text-xl mr-3">
-                      💻
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Online Webinars</h3>
-                  </div>
-                  
+                  <div className="bg-brand-500 p-2 rounded-full text-white text-xl w-12 h-12 mx-auto mb-4 flex items-center justify-center font-bold">IE</div>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Taken by Industry Experts</h3>
                   <p className="text-gray-700 mb-4">
-                    These sessions are conducted via digital platforms and are designed for quick access, 
-                    wide participation, and strong engagement. They often include live polls, interactive chats, 
-                    breakout activities, and digital handouts.
+                    These webinars are hosted by working professionals and domain experts, offering practical knowledge and real-world exposure through an online platform.
                   </p>
-                  
-                  <h4 className="font-semibold text-gray-800 mb-2">Online Webinar Features:</h4>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Join from anywhere using a smartphone or computer</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Real-time engagement with resource persons</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Downloadable materials and slides</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Digital certificate of participation</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Post-session quiz or feedback for active learners</span>
-                    </li>
+                  <ul className="text-left list-disc pl-6 space-y-2 text-gray-700">
+                    <li>Real-time exposure to industry practices</li>
+                    <li>Live Q&A and panel discussions</li>
+                    <li>Access to expert insights and current trends</li>
+                    <li>Online certificates and session recordings</li>
                   </ul>
                 </div>
-
-                {/* Offline Webinars */}
+          
+                {/* Taken by SWET Team Experts */}
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-brand-500 p-2 rounded-full text-white text-xl mr-3">
-                      🏢
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900">Offline Webinars</h3>
-                  </div>
-                  
+                  <div className="bg-brand-500 p-2 rounded-full text-white text-xl w-12 h-12 mx-auto mb-4 flex items-center justify-center font-bold">SW</div>
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Taken by SWET Team Experts</h3>
                   <p className="text-gray-700 mb-4">
-                    For institutions and communities that prefer a more personal touch, SWET conducts offline 
-                    webinars where our team or invited industry experts visit and conduct the session face-to-face 
-                    while using multimedia tools for live presentation and interaction.
+                    These webinars are led by SWET's own academic team and are designed to enhance learning outcomes, build concepts, and support career-focused growth.
                   </p>
-                  
-                  <h4 className="font-semibold text-gray-800 mb-2">Offline Webinar Highlights:</h4>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Live screening of presentations with interactive Q&A</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Panel discussions, demonstrations, and audience engagement</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Group participation for classroom learning</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Certificate distribution and on-the-spot feedback</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-brand-500 mr-2 font-bold">✓</span>
-                      <span className="text-gray-700">Opportunity to connect and collaborate in real time</span>
-                    </li>
+                  <ul className="text-left list-disc pl-6 space-y-2 text-gray-700">
+                    <li>Concept-based academic sessions</li>
+                    <li>Interactive learning with quizzes</li>
+                    <li>Handouts and supporting materials</li>
+                    <li>Certificate of participation (online)</li>
                   </ul>
                 </div>
+          
               </div>
             </div>
           </section>
+
 
           {/* Topics Covered */}
           <section className="py-12 bg-white">
