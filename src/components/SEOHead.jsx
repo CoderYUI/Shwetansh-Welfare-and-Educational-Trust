@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
 const SEOHead = ({ title, description, canonicalUrl }) => {
-  const siteTitle = 'Shwetansh Welfare and Educational Trust';
+  const siteTitle = 'Shwetansh Welfare and Educational Trust (SWET)';
   const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
-  const defaultDescription = 'Join Shwetansh Welfare and Educational Trust to make a real impact through education, welfare, and social initiatives. Volunteer opportunities available across India.';
+  const defaultDescription = 'Join Shwetansh Welfare and Educational Trust (SWET) to make a real impact through education, welfare, and social initiatives. Volunteer opportunities available across India. SWET is also known as Shwetansh Welfare and Educational Trust.';
   const metaDescription = description || defaultDescription;
   const siteUrl = 'https://shwetanshwelfaretrust.vercel.app/';
   const canonical = canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl;
