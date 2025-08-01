@@ -15,6 +15,7 @@ import Olympiads from './components/Olympiads';
 import Webinars from './components/Webinars';
 import JoinUs from './components/JoinUs'; // ✅ Import JoinUs
 import ScrollToTop from './components/ScrollToTop'; // ✅ Import ScrollToTop
+import OurTeamPage from './components/OurTeamPage'; // ✅ Import Contact component
 
 // Homepage layout
 function Home() {
@@ -47,6 +48,7 @@ function App() {
       <Route path="/olympiads" element={<Olympiads />} />
       <Route path="/webinars" element={<Webinars />} />
       <Route path="/join-us" element={<JoinUs />} /> {/* ✅ Added JoinUs route */}
+      <Route path="/our-team" element={<OurTeamPage />} />
     </Routes>
   );
 }
