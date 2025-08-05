@@ -161,7 +161,6 @@ const Navbar = () => {
             </Link>
             
             {/* ADDED: Desktop Our Team Link */}
-            {/*
             <Link
               to="/our-team"
               className={`font-medium hover:text-brand-500 transition-colors ${
@@ -170,7 +169,6 @@ const Navbar = () => {
             >
               Our Team
             </Link>
-            */}
 
             <a 
               href="/#footer" 
