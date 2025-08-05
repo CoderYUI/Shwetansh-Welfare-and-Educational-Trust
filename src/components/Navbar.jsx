@@ -140,6 +140,13 @@ const Navbar = () => {
                   >
                     Olympiads
                   </Link>
+                  <Link 
+                    to="/training" 
+                    className="block px-4 py-2 text-gray-700 hover:bg-brand-50 hover:text-brand-600"
+                    onClick={() => setServicesDropdownOpen(false)}
+                  >
+                    Training
+                  </Link>
                 </motion.div>
               )}
             </div>
@@ -154,7 +161,6 @@ const Navbar = () => {
             </Link>
             
             {/* ADDED: Desktop Our Team Link */}
-            {/*
             <Link
               to="/our-team"
               className={`font-medium hover:text-brand-500 transition-colors ${
@@ -163,7 +169,6 @@ const Navbar = () => {
             >
               Our Team
             </Link>
-            */}
 
             <a 
               href="/#footer" 
@@ -222,6 +227,13 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                   >
                     Olympiads
+                  </Link>
+                  <Link 
+                    to="/training" 
+                    className="block py-1 text-sm text-gray-700 hover:text-brand-600"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Training
                   </Link>
                 </div>
               </div>

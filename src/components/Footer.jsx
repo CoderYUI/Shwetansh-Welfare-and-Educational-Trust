@@ -137,7 +137,7 @@ const Footer = () => {
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-blue-400 transition"
                     >
-                      /shwetansh-welfare-and-educational-trust
+                      shwetansh-welfare-and-educational-trust
                     </a>
                   </div>
                 </div>
