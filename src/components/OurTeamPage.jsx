@@ -1,5 +1,8 @@
 // src/components/OurTeamPage.jsx
 import React from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import ScrollToTop from './ScrollToTop';
 
 // You might want to define team member data here or fetch it from an API
 const leadershipTeam = [
@@ -52,9 +55,10 @@ const generalTeam = [
 
 function OurTeamPage() {
   return (
-    <div className="font-poppins bg-brand-50 min-h-screen py-16">
+    <div className="font-poppins bg-brand-50 min-h-screen">
+      <Navbar />
       {/* Hero Section for Team Page */}
-      <section className="bg-gradient-to-r from-brand-500 to-brand-700 text-white text-center py-20 px-4 shadow-soft">
+      <section className="bg-gradient-to-r from-brand-500 to-brand-700 text-white pt-40 md:pt-30 text-center py-20 px-4 shadow-soft">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Meet the Minds Behind SWET</h1>
           <p className="text-xl md:text-2xl opacity-90 mb-8">
@@ -114,10 +118,8 @@ function OurTeamPage() {
         </button>
       </section>
 
-      {/* Basic Footer (reusing brand colors) */}
-      <footer className="bg-brand-900 text-white text-center py-8 px-4">
-        <p className="text-sm opacity-80">&copy; {new Date().getFullYear()} SWET. All rights reserved.</p>
-      </footer>
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }
