@@ -13,17 +13,18 @@ const leadershipTeam = [
     bio: "Vansh Aggarwal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction."
   },
   {
-    name: "Manishka Gupta",
-    title: "Chief Marketing Officer (CMO)",
-    image: "/manishka.jpg", // Placeholder image
-    bio: "Manishka Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections."
-  },
-  {
     name: "Anushka Gora",
     title: "Human Resource (HR)",
     image: "/anushka.jpg",
     bio: "Anushka Gora leads HR initiatives at SWET, fostering a culture of collaboration, growth, and employee well-being."
+  },
+  {
+    name: "Manishika Gupta",
+    title: "Chief Marketing Officer (CMO)",
+    image: "/manishka.jpg", // Placeholder image
+    bio: "Manishka Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections."
   }
+  
 ];
 
 const generalTeam = [
