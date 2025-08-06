@@ -19,24 +19,24 @@ const leadershipTeam = [
     bio: "Manishka Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections."
   },
   {
-    name: "Bidhi Sarma",
-    title: "Chief Operations Officer (COO)",
-    image: "/bidhi.jpg", // Placeholder image
-    bio: "Bidhi Sarma is an operations expert who ensures seamless processes and drives efficiency across SWET’s core functions."
+    name: "Anushka Gora",
+    title: "Human Resource (HR)",
+    image: "/anushka.jpg",
+    bio: "Anushka Gora leads HR initiatives at SWET, fostering a culture of collaboration, growth, and employee well-being."
   }
 ];
 
 const generalTeam = [
   {
-    name: "Anushka Gora",
-    title: "Human Resource (HR)",
-    image: "/anushka.jpg",
-    bio: "Anushka Gora leads HR initiatives at SWET, fostering a culture of collaboration, growth, and employee well-being."
+    name: "Bidhi Sarma",
+    title: "Chief Operations Officer (COO)",
+    image: "/bidhi.jpg", // Placeholder image
+    bio: "Bidhi Sarma is an operations expert who ensures seamless processes and drives efficiency across SWET’s core functions."
   },
   {
     name: "Bhaskar Ojha",
     title: "Chief Technical Officer (CTO)",
-    image: "/example.jpg",
+    image: "/bhaskar.jpg",
     bio: "Bhaskar Ojha is a tech innovator who leads SWET’s technical strategy and drives cutting-edge development across platforms."
   },
   {
@@ -114,8 +114,7 @@ function OurTeamPage() {
           We are always looking for passionate and talented individuals to contribute to our mission. Explore career opportunities with SWET.
         </p>
         <a
-          href="https://example.com/careers"
-          target="_blank"
+          href="/join-us"
           rel="noopener noreferrer"
           className="inline-block"
         >
