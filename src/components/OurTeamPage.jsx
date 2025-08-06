@@ -7,49 +7,49 @@ import ScrollToTop from './ScrollToTop';
 // You might want to define team member data here or fetch it from an API
 const leadershipTeam = [
   {
-    name: "Dr. Anya Sharma",
+    name: "Vansh Aggarwal",
     title: "Chief Executive Officer (CEO)",
-    image: "https://via.placeholder.com/150/60a5fa/ffffff?text=CEO", // Placeholder image
-    bio: "Dr. Sharma brings over 20 years of experience in tech leadership, driving innovation and strategic growth. Her vision has been instrumental in shaping SWET's direction."
+    image: "/vansh.jpg", // Placeholder image
+    bio: "Vansh Aggarwal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction."
   },
   {
-    name: "Mr. Raj Patel",
-    title: "Chief Financial Officer (CFO)",
-    image: "https://via.placeholder.com/150/3b82f6/ffffff?text=CFO", // Placeholder image
-    bio: "Mr. Patel is a seasoned financial expert with a strong background in corporate finance and investment. He ensures the robust financial health and sustainable growth of SWET."
-  },
-  {
-    name: "Ms. Lena Singh",
+    name: "Manishka Gupta",
     title: "Chief Marketing Officer (CMO)",
-    image: "https://via.placeholder.com/150/2563eb/ffffff?text=CMO", // Placeholder image
-    bio: "Ms. Singh is a dynamic marketing leader, expert in digital strategy and brand development. She spearheads SWET's market presence and engagement initiatives."
+    image: "/manishka.jpg", // Placeholder image
+    bio: "Manishka Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections."
+  },
+  {
+    name: "Bidhi Sarma",
+    title: "Chief Operations Officer (COO)",
+    image: "/bidhi.jpg", // Placeholder image
+    bio: "Bidhi Sarma is an operations expert who ensures seamless processes and drives efficiency across SWET’s core functions."
   }
 ];
 
 const generalTeam = [
   {
-    name: "Ahmed Khan",
-    title: "Lead Developer",
-    image: "https://via.placeholder.com/100/eff6ff/1e3a8a?text=AK",
-    bio: "Specializes in full-stack development and scalable architectures."
+    name: "Anushka Gora",
+    title: "Human Resource (HR)",
+    image: "/anushka.jpg",
+    bio: "Anushka Gora leads HR initiatives at SWET, fostering a culture of collaboration, growth, and employee well-being."
   },
   {
-    name: "Priya Devi",
-    title: "UI/UX Designer",
-    image: "https://via.placeholder.com/100/eff6ff/1e3a8a?text=PD",
-    bio: "Crafts intuitive and beautiful user experiences."
+    name: "Bhaskar Ojha",
+    title: "Chief Technical Officer (CTO)",
+    image: "/example.jpg",
+    bio: "Bhaskar Ojha is a tech innovator who leads SWET’s technical strategy and drives cutting-edge development across platforms."
   },
   {
-    name: "Chris Evans",
-    title: "Content Strategist",
-    image: "https://via.placeholder.com/100/eff6ff/1e3a8a?text=CE",
-    bio: "Develops engaging and informative content for all platforms."
+    name: "Om Bilaiya",
+    title: "Business Analyst",
+    image: "/om.jpg",
+    bio: "Om Bilaiya analyzes business data and trends to support strategic decisions and enhance SWET’s operational efficiency."
   },
   {
-    name: "Sarah Lee",
-    title: "Community Manager",
-    image: "https://via.placeholder.com/100/eff6ff/1e3a8a?text=SL",
-    bio: "Fosters a vibrant and supportive community around our products."
+    name: "Gaurvi Sharan Nigam",
+    title: "Head of Sales",
+    image: "/gaurvi.jpg",
+    bio: "Gaurvi leads SWET’s sales strategy, building client relationships and boosting revenue growth."
   },
 ];
 
@@ -113,9 +113,16 @@ function OurTeamPage() {
         <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
           We are always looking for passionate and talented individuals to contribute to our mission. Explore career opportunities with SWET.
         </p>
-        <button className="bg-accent-500 hover:bg-accent-600 text-white font-semibold py-3 px-8 rounded-full shadow-soft hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-          View Open Positions
-        </button>
+        <a
+          href="https://example.com/careers"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block"
+        >
+          <button className="bg-accent-500 hover:bg-accent-600 text-white font-semibold py-3 px-8 rounded-full shadow-soft hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            Apply Now
+          </button>
+        </a>
       </section>
 
       <Footer />
