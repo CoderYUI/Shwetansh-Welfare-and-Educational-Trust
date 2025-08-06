@@ -6,17 +6,18 @@ import ScrollToTop from './ScrollToTop';
 
 // You might want to define team member data here or fetch it from an API
 const leadershipTeam = [
-  {
-    name: "Vansh Aggarwal",
-    title: "Chief Executive Officer (CEO)",
-    image: "/vansh.jpg", // Placeholder image
-    bio: "Vansh Aggarwal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction."
-  },
+  
   {
     name: "Anushka Gora",
     title: "Human Resource (HR)",
     image: "/anushka.jpg",
     bio: "Anushka Gora leads HR initiatives at SWET, fostering a culture of collaboration, growth, and employee well-being."
+  },
+  {
+    name: "Vansh Aggarwal",
+    title: "Chief Executive Officer (CEO)",
+    image: "/vansh.jpg", // Placeholder image
+    bio: "Vansh Aggarwal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction."
   },
   {
     name: "Manishika Gupta",
