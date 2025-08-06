@@ -19,7 +19,7 @@ const leadershipTeam = [
     bio: "Anushka Gora leads HR initiatives at SWET, fostering a culture of collaboration, growth, and employee well-being."
   },
   {
-    name: "Manishka Gupta",
+    name: "Manishika Gupta",
     title: "Chief Marketing Officer (CMO)",
     image: "/manishka.jpg", // Placeholder image
     bio: "Manishka Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections."
