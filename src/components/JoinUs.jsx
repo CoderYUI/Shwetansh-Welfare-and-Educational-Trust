@@ -238,15 +238,15 @@ const JoinUs = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 text-center max-w-5xl mx-auto">
               <div className="p-3 md:p-6 bg-gray-50 rounded-lg">
-                <div className="text-2xl md:text-4xl font-bold text-brand-600 mb-2">100+</div>
+                <div className="text-2xl md:text-4xl font-bold text-brand-600 mb-2">83+</div>
                 <p className="text-sm md:text-base text-gray-700">Volunteers Nationwide</p>
               </div>
               <div className="p-3 md:p-6 bg-gray-50 rounded-lg">
-                <div className="text-2xl md:text-4xl font-bold text-brand-600 mb-2">10+</div>
+                <div className="text-2xl md:text-4xl font-bold text-brand-600 mb-2">5+</div>
                 <p className="text-sm md:text-base text-gray-700">Active Projects</p>
               </div>
               <div className="p-3 md:p-6 bg-gray-50 rounded-lg">
-                <div className="text-2xl md:text-4xl font-bold text-brand-600 mb-2">100+</div>
+                <div className="text-2xl md:text-4xl font-bold text-brand-600 mb-2">146+</div>
                 <p className="text-sm md:text-base text-gray-700">Lives Impacted</p>
               </div>
               <div className="p-3 md:p-6 bg-gray-50 rounded-lg">
