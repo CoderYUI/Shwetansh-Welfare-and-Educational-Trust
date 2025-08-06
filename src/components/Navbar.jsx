@@ -161,7 +161,7 @@ const Navbar = () => {
             </Link>
             
             {/* ADDED: Desktop Our Team Link */}
-            {/*
+            
             <Link
               to="/our-team"
               className={`font-medium hover:text-brand-500 transition-colors ${
@@ -170,7 +170,7 @@ const Navbar = () => {
             >
               Our Team
             </Link>
-            */}
+          
             <a 
               href="/#footer" 
               className="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2 rounded-full font-medium transition-colors"
@@ -248,7 +248,7 @@ const Navbar = () => {
               </Link>
 
               {/* ADDED: Mobile Our Team Link */}
-              {/*
+            
               <Link
                 to="/our-team"
                 className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 text-gray-700"
@@ -256,7 +256,7 @@ const Navbar = () => {
               >
                 Our Team
               </Link>
-              */}
+              
               <a 
                 href="/#footer" 
                 className="block px-3 py-2 rounded-md text-base font-medium bg-brand-500 text-white"
