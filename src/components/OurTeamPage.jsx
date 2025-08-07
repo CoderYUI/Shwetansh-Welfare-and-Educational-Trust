@@ -8,7 +8,7 @@ import ScrollToTop from './ScrollToTop';
 const leadershipTeam = [
   
   {
-    name: "Vansh Aggarwal",
+    name: "Vansh Agrawal",
     title: "Chief Executive Officer (CEO)",
     image: "/vansh.jpg", // Placeholder image
     bio: "Vansh Aggarwal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction."
