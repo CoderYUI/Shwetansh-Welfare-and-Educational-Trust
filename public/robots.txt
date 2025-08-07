@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shwetanshwelfaretrust.vercel.app/sitemap.xml
+Sitemap: https://www.shwetanshwelfare.org/sitemap.xml
