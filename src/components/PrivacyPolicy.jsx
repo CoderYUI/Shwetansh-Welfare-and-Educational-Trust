@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
                   committed to protecting your personal information and your right to 
                   privacy. This Privacy Policy explains how we collect, use, disclose, and 
                   safeguard your information when you visit our website: 
-                  https://shwetanshwelfaretrust.vercel.app ("Platform"). By accessing or 
+                  https://www.shwetanshwelfare.org ("Platform"). By accessing or 
                   using our Platform, you agree to this Privacy Policy and our Terms of Use.
                 </p>
                 <p className="text-gray-700 mt-2">
