@@ -213,7 +213,7 @@ const JoinUs = () => {
               
               <div className="mt-8">
                 <a 
-                  href="https://forms.gle/TqivSGspxzNXbMDXA" 
+                  href="https://forms.gle/Tai1zbrh2QksRN8UA" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-white text-brand-600 px-6 py-3 rounded-lg font-bold text-lg shadow-md hover:bg-gray-100 transition-colors"

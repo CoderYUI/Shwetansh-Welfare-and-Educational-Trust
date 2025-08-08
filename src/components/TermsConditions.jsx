@@ -28,9 +28,9 @@ const TermsConditions = () => {
                 <p className="text-gray-700 mb-4">
                   This document is published in accordance with the provisions of Rule 3 (1) of the Information 
                   Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and 
-                  regulations, privacy policy and Terms of Use for access or usage of domain name 
+                  regulations, privacy policy and Terms of Use for access or usage of domain name_ 
                   <a href="https://www.shwetanshwelfare.org" className="text-brand-600 hover:underline">
-                    https://www.shwetanshwelfare.org/
+                     https://www.shwetanshwelfare.org/
                   </a> ('Website'), including the related 
                   mobile site and mobile application (hereinafter referred to as 'Platform').
                 </p>
