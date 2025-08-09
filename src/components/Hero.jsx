@@ -47,15 +47,18 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="mb-6"
           >
+            {/* SEO-optimized heading with SWET acronym */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Shwetansh Welfare and <br />Educational Trust
+              Shwetansh Welfare and <br />Educational Trust <span className="text-brand-200">(SWET)</span>
             </h1>
             <p className="text-xl md:text-2xl text-white opacity-90 italic mb-10">
               "Empowering Youth, Transforming Futures"
             </p>
+            {/* SEO-rich description with keywords */}
             <p className="text-lg text-white opacity-80 max-w-3xl mx-auto mb-10">
-              Join our government-registered organization committed to creating positive change through education, 
-              welfare, and innovative community-based projects.
+              SWET is a government-registered organization committed to creating positive change through education, 
+              welfare programs, and innovative community-based projects across India.
+              Join our mission to transform lives through impactful social initiatives.
             </p>
           </motion.div>
 
@@ -70,8 +73,9 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-brand-600 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all"
+                aria-label="Join SWET as a volunteer"
               >
-                Join Us
+                Join SWET
               </motion.button>
             </Link>
             
@@ -81,6 +85,7 @@ const Hero = () => {
               href="#about"
               onClick={handleScrollToAbout}
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brand-600 transition-all"
+              aria-label="Learn more about SWET's work"
             >
               Explore Our Work
             </motion.a>
@@ -96,6 +101,7 @@ const Hero = () => {
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
               className="text-white text-3xl"
+              aria-hidden="true"
             >
               ↓
             </motion.div>

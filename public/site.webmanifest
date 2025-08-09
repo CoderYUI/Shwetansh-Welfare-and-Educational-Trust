@@ -1,0 +1,33 @@
+{
+  "name": "Shwetansh Welfare and Educational Trust",
+  "short_name": "SWET",
+  "description": "Empowering Youth, Transforming Futures - SWET is dedicated to education, welfare, and social initiatives across India.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#4f46e5",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "related_applications": [],
+  "prefer_related_applications": false
+}
