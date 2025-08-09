@@ -74,7 +74,7 @@ const PreviousWork = () => {
                 />
               </div>
               <div className="p-6 flex-grow">
-                <span className="inline-block px-3 py-1 bg-brand-50 text-brand-600 rounded-full text-xs font-medium mb-3">
+                <span className="inline-block px-3 py-1 bg-green-50 text-green-600 rounded-full text-xs font-medium mb-3">
                   {project.category}
                 </span>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
@@ -97,7 +97,7 @@ const PreviousWork = () => {
             These upcoming initiatives represent just a glimpse of our commitment to creating positive change through education.
           </p>
           
-          <a href="/join-us" className="inline-flex items-center text-brand-600 font-semibold group">
+          <a href="/join-us" className="inline-flex items-center text-orange-600 font-semibold group">
             <span>Be part of our future initiatives</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />

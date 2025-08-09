@@ -65,7 +65,10 @@ const Navbar = () => {
               />
             </div>
             <div className={`font-semibold text-sm md:text-base lg:text-lg ${scrolled ? 'text-gray-800' : 'text-white'}`}>
-              <span className={scrolled ? "text-brand-600" : "text-white"} itemProp="name">Shwetansh</span> Welfare and Educational Trust <span className="text-xs font-normal">(SWET)</span>
+              <span className={scrolled ? "text-brand-600" : "text-white"} itemProp="name">Shwetansh</span>
+              <span className={scrolled ? "text-orange-500" : "text-white"}> Welfare </span>
+              and <span className={scrolled ? "text-green-600" : "text-white"}> Educational Trust </span>
+              <span className="text-xs font-normal">(SWET)</span>
             </div>
           </Link>
           
@@ -207,7 +210,7 @@ const Navbar = () => {
           
             <a 
               href="/#footer" 
-              className="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2 rounded-full font-medium transition-colors"
+              className="bg-brand-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-colors"
               itemProp="url"
               aria-label="Contact SWET"
             >

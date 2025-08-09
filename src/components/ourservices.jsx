@@ -45,7 +45,7 @@ const OurServices = () => {
     <div className="bg-gray-50 py-16" id="services">
       <div className="container mx-auto px-4">
         <p className="text-center mb-2">
-          <span className="inline-block px-4 py-1 rounded-full bg-brand-100 text-brand-600 font-medium text-sm">
+          <span className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-600 font-medium text-sm">
             What We Offer
           </span>
         </p>
@@ -81,7 +81,7 @@ const OurServices = () => {
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 
                 {/* Learn More button/link for better affordance */}
-                <div className="flex items-center text-brand-600 font-medium group-hover:text-brand-700 transition-colors">
+                <div className="flex items-center text-orange-600 font-medium group-hover:text-brand-700 transition-colors">
                   <span>Learn More</span>
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
