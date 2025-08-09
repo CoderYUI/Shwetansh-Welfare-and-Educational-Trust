@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Sitemaps
 Sitemap: https://www.shwetanshwelfare.org/sitemap.xml
+
+# Prevent caching of certain resources
+Disallow: /temp/
+Disallow: /private/

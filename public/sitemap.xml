@@ -2,8 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.shwetanshwelfare.org/</loc>
-    <lastmod>2025-08-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/join-us</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/our-team</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/seminars</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/webinars</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/olympiads</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/training</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/privacy_policy</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/refund_policy</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.shwetanshwelfare.org/terms</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>
