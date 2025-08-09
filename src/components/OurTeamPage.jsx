@@ -11,20 +11,23 @@ const leadershipTeam = [
     name: "Vansh Agrawal",
     title: "Chief Executive Officer (CEO)",
     image: "/vansh.jpg", // Placeholder image
-    bio: "Vansh Aggarwal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction."
+    bio: "Vansh Aggarwal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction.",
+    email: "vanshagrawal509@gmail.com"
   },
   {
     name: "Anushka Gora",
     title: "Human Resource (HR)",
     image: "/anushka.jpg",
-    bio: "Anushka Gora leads HR initiatives at SWET, fostering a culture of collaboration, growth, and employee well-being."
+    bio: "Anushka Gora leads HR initiatives at SWET, fostering a culture of collaboration, growth, and employee well-being.",
+    email: "anushkagora0505@gmail.com"
   },
   
   {
     name: "Manishika Gupta",
     title: "Chief Marketing Officer (CMO)",
     image: "/manishka.jpg", // Placeholder image
-    bio: "Manishka Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections."
+    bio: "Manishka Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections.",
+    email: "gmanishika@gmail.com"
   }
   
 ];
@@ -34,25 +37,29 @@ const generalTeam = [
     name: "Bidhi Sarma",
     title: "Chief Operations Officer (COO)",
     image: "/bidhi.jpg", // Placeholder image
-    bio: "Bidhi Sarma is an operations expert who ensures seamless processes and drives efficiency across SWET’s core functions."
+    bio: "Bidhi Sarma is an operations expert who ensures seamless processes and drives efficiency across SWET’s core functions.",
+    email: "bidhisarma0224@gmail.com"
   },
   {
     name: "Bhaskar Ojha",
     title: "Chief Technical Officer (CTO)",
     image: "/bhaskar.jpg",
-    bio: "Bhaskar Ojha is a tech innovator who leads SWET’s technical strategy and drives cutting-edge development across platforms."
+    bio: "Bhaskar Ojha is a tech innovator who leads SWET’s technical strategy and drives cutting-edge development across platforms.",
+    email: "bhaskarojha00@gmail.com"
   },
   {
     name: "Om Bilaiya",
     title: "Business Analyst",
     image: "/om.jpg",
-    bio: "Om Bilaiya analyzes business data and trends to support strategic decisions and enhance SWET’s operational efficiency."
+    bio: "Om Bilaiya analyzes business data and trends to support strategic decisions and enhance SWET’s operational efficiency.",
+    email: "ombilaiya01@gmail.com"
   },
   {
     name: "Gaurvi Sharan Nigam",
     title: "Head of Sales",
     image: "/gaurvi.jpg",
-    bio: "Gaurvi leads SWET’s sales strategy, building client relationships and boosting revenue growth."
+    bio: "Gaurvi leads SWET’s sales strategy, building client relationships and boosting revenue growth.",
+    email: "nigamgaurvisharan@gmail.com"
   },
 ];
 
@@ -84,6 +91,14 @@ function OurTeamPage() {
               <h3 className="text-2xl font-semibold text-brand-700 mb-2">{member.name}</h3>
               <p className="text-lg text-accent-700 font-medium mb-4">{member.title}</p>
               <p className="text-gray-600 leading-relaxed text-center">{member.bio}</p>
+              <div className="mt-4">
+                <a
+                  href={`mailto:${member.email}`}
+                  className="text-brand-500 hover:underline text-sm"
+                >
+                  {member.email}
+                </a>
+              </div>
             </div>
           ))}
         </div>
@@ -104,6 +119,14 @@ function OurTeamPage() {
                 <h3 className="text-xl font-semibold text-brand-600 mb-1">{member.name}</h3>
                 <p className="text-md text-gray-500 mb-3">{member.title}</p>
                 <p className="text-sm text-gray-600 leading-relaxed text-center">{member.bio}</p>
+                <div className="mt-4">
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="text-brand-500 hover:underline text-sm"
+                  >
+                    {member.email}
+                  </a>
+                </div>
               </div>
             ))}
           </div>
