@@ -194,7 +194,7 @@ const About = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.6, delay: 0.7 }}
-                      className="text-2xl text-white font-bold mb-2"
+                      className="text-2xl text-black font-bold mb-2"
                     >
                       Empowering Communities
                     </motion.h3>
