@@ -8,5 +8,16 @@
       "dest": "/",
       "status": 200
     }
+  ],
+  "headers": [
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</favicon-aug15-2025.ico>; rel=\"icon\"; type=\"image/x-icon\""
+        }
+      ]
+    }
   ]
 }
