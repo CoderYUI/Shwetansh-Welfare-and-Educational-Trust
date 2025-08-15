@@ -14,16 +14,16 @@
       "headers": [
         {
           "key": "Link",
-          "value": "</favicon-aug15-2025.ico>; rel=\"icon\"; type=\"image/x-icon\""
+          "value": "</favicon-v2.ico>; rel=\"icon\"; type=\"image/x-icon\""
         },
         {
           "key": "Link",
-          "value": "</favicon.ico>; rel=\"icon\"; type=\"image/x-icon\""
+          "value": "</favicon-v2.ico>; rel=\"icon\"; type=\"image/x-icon\""
         }
       ]
     },
     {
-      "source": "/favicon.ico",
+      "source": "/favicon-v2.ico",
       "headers": [
         {
           "key": "Cache-Control",
