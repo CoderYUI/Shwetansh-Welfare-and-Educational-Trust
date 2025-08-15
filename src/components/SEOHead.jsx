@@ -98,6 +98,18 @@ const SEOHead = ({
     }
     schemaScript.innerHTML = dynamicSchema;
 
+    // Add favicon link if not present
+    let faviconLink = document.querySelector('link[rel="icon"][type="image/x-icon"]');
+    if (!faviconLink) {
+      faviconLink = document.createElement('link');
+      faviconLink.rel = 'icon';
+      faviconLink.type = 'image/x-icon';
+      faviconLink.href = '/favicon-v2.ico';
+      document.head.appendChild(faviconLink);
+    } else {
+      faviconLink.href = '/favicon-v2.ico';
+    }
+
     function updateMetaTag(name, content) {
       let tag = document.querySelector(`meta[name="${name}"]`);
       if (!tag) {
