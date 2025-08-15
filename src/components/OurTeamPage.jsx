@@ -11,7 +11,7 @@ const leadershipTeam = [
     name: "Vansh Agrawal",
     title: "Chief Executive Officer (CEO)",
     image: "/vansh.jpg", // Placeholder image
-    bio: "Vansh Aggarwal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction.",
+    bio: "Vansh Agrawal is a dynamic tech leader known for driving innovation and shaping strategic growth. His vision plays a key role in steering SWET’s direction.",
     email: "vanshagrawal509@gmail.com"
   },
   {
@@ -26,7 +26,7 @@ const leadershipTeam = [
     name: "Manishika Gupta",
     title: "Chief Marketing Officer (CMO)",
     image: "/manishka.jpg", // Placeholder image
-    bio: "Manishka Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections.",
+    bio: "Manishika Gupta is a marketing strategist who strengthens brand presence and builds strong customer connections.",
     email: "gmanishika@gmail.com"
   }
   
